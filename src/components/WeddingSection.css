@@ -1,0 +1,177 @@
+.wedding-container {
+  background: #f5f5f5;
+  padding: 70px 20px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.main-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  color: #6e6e6e;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.line {
+  width: 120px;
+  height: 1px;
+  background: #bdbdbd;
+}
+
+.flower {
+  margin: 0 15px;
+  font-size: 22px;
+}
+
+.description {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+}
+
+.signature-section {
+  margin-top: 40px;
+  text-align: right;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signature {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.founder-line {
+  font-size: 16px;
+  color: #d12c6a;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.meet-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 1px solid #cfcfcf;
+  background: transparent;
+  color: #6e6e6e;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.meet-btn:hover {
+  background: #eaeaea;
+}
+
+
+@media (max-width: 1024px) {
+  .main-title {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+
+  .signature {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wedding-container {
+    padding: 55px 18px;
+  }
+
+  .main-title {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .divider {
+    margin: 18px 0 30px;
+  }
+
+  .line {
+    width: 80px;
+  }
+
+  .flower {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+  }
+
+  .signature-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .signature {
+    font-size: 22px;
+  }
+
+  .founder-line {
+    font-size: 14px;
+  }
+
+  .meet-btn {
+    margin-top: 25px;
+    font-size: 13px;
+    padding: 10px 26px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  .line {
+    width: 60px;
+  }
+
+  .flower {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+  }
+
+  .signature {
+    font-size: 20px;
+  }
+
+  .meet-btn {
+    padding: 9px 22px;
+    letter-spacing: 1.5px;
+  }
+}

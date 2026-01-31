@@ -1,0 +1,146 @@
+.magical-container {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.magical-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+}
+
+.magical-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 56px;
+  font-weight: 400;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+.divider {
+  margin: 15px auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #c89b3c;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c89b3c;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.magical-text {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6b6b6b;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.magical-image {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.magical-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .magical-content {
+    padding: 50px 20px 35px;
+  }
+
+  .magical-title {
+    font-size: 44px;
+  }
+
+  .magical-text {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .divider::before,
+  .divider::after {
+    width: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .magical-content {
+    padding: 40px 18px 30px;
+  }
+
+  .magical-title {
+    font-size: 36px;
+  }
+
+  .divider {
+    margin: 12px auto 20px;
+  }
+
+  .divider::before,
+  .divider::after {
+    width: 40px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .magical-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  .magical-image {
+    margin-top: 30px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .magical-content {
+    padding: 30px 16px 25px;
+  }
+
+  .magical-title {
+    font-size: 30px;
+  }
+
+  .divider::before,
+  .divider::after {
+    width: 30px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .magical-text {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .magical-image {
+    margin-top: 25px;
+  }
+}

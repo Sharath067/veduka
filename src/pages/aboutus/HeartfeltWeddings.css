@@ -1,0 +1,80 @@
+.heartfelt-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.heartfelt-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.heartfelt-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  color: #6e6e6e;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.heartfelt-description {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+}
+
+@media (max-width: 1024px) {
+  .heartfelt-section {
+    padding: 65px 20px;
+  }
+
+  .heartfelt-title {
+    font-size: 52px;
+  }
+
+  .heartfelt-description {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .heartfelt-section {
+    padding: 55px 18px;
+  }
+
+  .heartfelt-title {
+    font-size: 42px;
+    letter-spacing: 1.5px;
+  }
+
+  .heartfelt-description {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .heartfelt-section {
+    padding: 45px 16px;
+  }
+
+  .heartfelt-title {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+
+  .heartfelt-description {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+  }
+}

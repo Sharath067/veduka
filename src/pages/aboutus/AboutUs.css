@@ -1,0 +1,104 @@
+.about-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 105px 40px;
+  border-radius: 10px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+  .about-overlay {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-background {
+    height: 50vh;
+  }
+
+  .about-overlay {
+    padding: 70px 35px;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-background {
+    height: 45vh;
+    min-height: 320px;
+  }
+
+  .about-overlay {
+    padding: 98px 25px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about-background {
+    height: 40vh;
+    min-height: 280px;
+  }
+
+  .about-overlay {
+    padding: 62px 18px;
+    border-radius: 8px;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
