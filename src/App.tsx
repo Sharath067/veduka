@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import LoveMarquee from "./components/LoveMarquee";
-import WeddingSection from "./components/WeddingSection";
+import Navbar from "./components/main/Navbar";
+import Hero from "./components/main/Hero";
+import LoveMarquee from "./components/main/LoveMarquee";
+import WeddingSection from "./components/main/WeddingSection";
 import AboutUs from "./pages/aboutus/AboutUs";
 import MagicalDay from "./pages/aboutus/MagicalDay";
 import HeartfeltWeddings from "./pages/aboutus/HeartfeltWeddings";
 import StorySlices from "./pages/aboutus/StorySlices";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/main/ScrollToTop";
 import ElegantSection from "./pages/aboutus/ElegantSection";
 import Footer from "./components/footer/Footer";
+import WorkCarousel from "./components/main/WorkCarousel";
+import WeddingStories from "./components/main/WeddingStories";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Hero />
               <LoveMarquee text="Spreading Love and Happiness to Families with Veduka Management" />
               <WeddingSection />
+              <WorkCarousel />
+              <WeddingStories />
               <Footer />
             </>
           }

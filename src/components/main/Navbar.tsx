@@ -58,10 +58,7 @@ export default function Navbar() {
           </div>
 
           {/* HAMBURGER (MOBILE ONLY) */}
-          <div
-            className="hamburger"
-            onClick={() => setMobileMenu(!mobileMenu)}
-          >
+          <div className="hamburger" onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu ? <HiX /> : <HiOutlineMenuAlt3 />}
           </div>
         </div>

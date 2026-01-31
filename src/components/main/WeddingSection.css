@@ -16,19 +16,33 @@
 .divider {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 20px 0 40px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto 45px; 
+  gap: 20px;
 }
 
 .line {
-  width: 120px;
+  flex: 1;                
   height: 1px;
-  background: #bdbdbd;
+  display: block;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #ca97a9,
+    transparent
+  );
+  opacity: 0.8;
 }
 
+
 .flower {
-  margin: 0 15px;
   font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #c04875;
+  animation: flowerRotate 6s linear infinite;
 }
 
 .description {
@@ -109,7 +123,8 @@
   }
 
   .divider {
-    margin: 18px 0 30px;
+    margin: 24px 0 35px;
+    gap: 14px;
   }
 
   .line {
@@ -152,7 +167,7 @@
     font-size: 32px;
   }
 
-  .line {
+   .line {
     width: 60px;
   }
 
@@ -173,5 +188,14 @@
   .meet-btn {
     padding: 9px 22px;
     letter-spacing: 1.5px;
+  }
+}
+
+@keyframes flowerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import * as bootstrap from "bootstrap";
 import "./Hero.css";
 
-import img1 from "../assets/images/wedding-1.jpg";
-import img2 from "../assets/images/wedding-2.jpg";
-import img3 from "../assets/images/wedding-3.jpeg";
-import img4 from "../assets/images/wedding-4.jpeg";
-import img5 from "../assets/images/wedding-5.jpeg";
+import img1 from "../../assets/images/wedding-1.jpg";
+import img2 from "../../assets/images/wedding-2.jpg";
+import img3 from "../../assets/images/wedding-3.jpeg";
+import img4 from "../../assets/images/wedding-4.jpeg";
+import img5 from "../../assets/images/wedding-5.jpeg";
 
 const Hero: React.FC = () => {
   useEffect(() => {
@@ -32,10 +32,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div
-      id="heroCarousel"
-      className="carousel slide carousel-fade"
-    >
+    <div id="heroCarousel" className="carousel slide carousel-fade">
       <div className="carousel-indicators">
         {[0, 1, 2, 3, 4].map((i) => (
           <button
