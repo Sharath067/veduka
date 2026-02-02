@@ -17,6 +17,9 @@ import OurProcess from "./components/ourProcess/OurProcess";
 import OurServiceBanner from "./components/our-service/OurServiceBanner";
 import TellYourStory from "./components/our-service/TellYourStory";
 import WhatWeDo from "./components/our-service/WhatWeDo";
+import ContactUsBanner from "./pages/contactus/ContactUsBanner";
+import GetInTouch from "./pages/contactus/GetInTouch";
+import ContactSection from "./pages/contactus/ContactSection";
 
 function App() {
   return (
@@ -67,6 +70,18 @@ function App() {
               <OurServiceBanner />
               <WhatWeDo />
               <TellYourStory />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/contact-us"
+          element={
+            <>
+              <ContactUsBanner />
+              <GetInTouch />
+              <TellYourStory />
+              <ContactSection />
               <Footer />
             </>
           }

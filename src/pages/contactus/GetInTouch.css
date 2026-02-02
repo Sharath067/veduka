@@ -1,0 +1,23 @@
+.get-in-touch {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.get-in-touch h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.get-in-touch p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #555;
+  letter-spacing: 0.3px;
+}

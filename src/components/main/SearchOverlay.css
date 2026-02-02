@@ -18,12 +18,15 @@
 
 .search-overlay input {
   width: 90%;
+  height: 37px;              
+  line-height: 40px;         
   border: none;
   outline: none;
   background: transparent;
-  font-size: 22px;
+  font-size: 20px;          
   font-family: 'Cinzel', serif;
 }
+
 
 .close-icon {
   font-size: 26px;
