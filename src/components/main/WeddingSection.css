@@ -111,7 +111,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .wedding-container {
     padding: 55px 18px;
@@ -161,7 +160,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .main-title {
     font-size: 32px;

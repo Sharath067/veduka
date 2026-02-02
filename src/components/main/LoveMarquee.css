@@ -43,7 +43,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .marquee-container {
     height: 160px;
@@ -56,7 +55,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .marquee-container {
     height: 120px;

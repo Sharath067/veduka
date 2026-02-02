@@ -21,23 +21,19 @@ export default function Navbar() {
   const menuItems = [
     { name: "HOME", path: "/" },
     { name: "ABOUT US", path: "/about-us" },
-    { name: "VENUES", path: "/venues" },
-    { name: "OUR PROCESS", path: "/process" },
-    { name: "SERVICES", path: "/services" },
-    { name: "SWEET WORDS", path: "/sweet-words" },
+    { name: "OUR PROCESS", path: "/our-process" },
+    { name: "SERVICES", path: "/our-service" },
     { name: "CONTACT US", path: "/contact" },
   ];
 
   return (
     <>
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
-        {/* LOGO */}
         <div className="logo animate-logo">
           VEDUKA
           <span>weddings & celebrations</span>
         </div>
 
-        {/* DESKTOP MENU */}
         <nav className="menu animate-menu">
           {menuItems.map((item) => (
             <NavLink
@@ -51,20 +47,17 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* RIGHT ICONS */}
         <div className="nav-icons">
           <div className="search" onClick={() => setOpenSearch(true)}>
             <FiSearch />
           </div>
 
-          {/* HAMBURGER (MOBILE ONLY) */}
           <div className="hamburger" onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu ? <HiX /> : <HiOutlineMenuAlt3 />}
           </div>
         </div>
       </header>
 
-      {/* MOBILE MENU */}
       <div className={`mobile-menu ${mobileMenu ? "open" : ""}`}>
         {menuItems.map((item) => (
           <NavLink

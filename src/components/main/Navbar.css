@@ -45,7 +45,7 @@
 
 .menu {
   display: flex;
-  gap: 22px; 
+  gap: 50px; 
   font-family: 'Cinzel', serif;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .menu a {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   color: #c04875;
   text-decoration: none;
@@ -67,7 +67,6 @@
   cursor: pointer;
 }
 
-/* underline base */
 .menu a::after {
   content: "";
   position: absolute;
@@ -90,10 +89,6 @@
   transform: scaleX(1);
 }
 
-/* .menu a.active {
-  color: #ff0066;
-} */
-
 .search {
   font-size: 17px;
   color: #c04875;
@@ -115,14 +110,12 @@
   }
 }
 
-/* ICON WRAPPER */
 .nav-icons {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* HAMBURGER */
 .hamburger {
   display: none;
   font-size: 22px;
@@ -130,7 +123,6 @@
   cursor: pointer;
 }
 
-/* MOBILE MENU */
 .mobile-menu {
   position: fixed;
   top: 60px;

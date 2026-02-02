@@ -43,7 +43,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .heartfelt-section {
     padding: 55px 18px;
@@ -61,7 +60,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .heartfelt-section {
     padding: 45px 16px;

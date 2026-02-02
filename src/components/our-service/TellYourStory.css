@@ -1,0 +1,131 @@
+.story-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("../../assets/images/form-background.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.story-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.story-form {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  padding: 50px;
+  border-radius: 8px;
+  color: #fff;
+  z-index: 1;
+}
+
+.story-form h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.story-subtitle {
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+textarea {
+  margin-top: 20px;
+  min-height: 120px;
+  resize: none;
+}
+
+.form-group {
+  margin-top: 40px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.checkbox-group{
+display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.checkbox-group label,
+.radio-group label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 14px 40px;
+  border: none;
+  background: #b85c5c;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #9e4a4a;
+}
+
+@media (max-width: 768px) {
+     .checkbox-group,
+  .radio-group {
+    flex-wrap: wrap;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-form {
+    padding: 30px 20px;
+  }
+}

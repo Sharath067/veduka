@@ -81,7 +81,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .magical-content {
     padding: 40px 18px 30px;
@@ -115,7 +114,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .magical-content {
     padding: 30px 16px 25px;

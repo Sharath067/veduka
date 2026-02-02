@@ -93,24 +93,20 @@
     flex-direction: column;
   }
 
-  /* Default order reset */
   .slices-card {
     order: 99;
   }
 
-  /* IMAGE CARDS */
   .slices-card:nth-child(1) { order: 1; }
   .slices-card:nth-child(4) { order: 3; }
   .slices-card:nth-child(5) { order: 5; }
   .slices-card:nth-child(8) { order: 7; }
 
-  /* TEXT CARDS */
   .slices-card:nth-child(2) { order: 2; }
   .slices-card:nth-child(3) { order: 4; }
   .slices-card:nth-child(6) { order: 6; }
   .slices-card:nth-child(7) { order: 8; }
 
-  /* Sizing */
   .slices-image {
     height: 230px;
   }
@@ -129,7 +125,6 @@
     line-height: 1.7;
   }
 
-  /* Mobile animation */
   .slide-left .slices-inner,
   .slide-right .slices-inner {
     transform: translateY(30px);

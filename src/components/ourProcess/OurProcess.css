@@ -1,0 +1,158 @@
+.process-section {
+  position: relative;
+  padding: 120px 60px;
+  background: #fffaf5;
+  text-align: center;
+  overflow: hidden;
+}
+
+.process-divider {
+  display: block;
+  margin: -100px auto 20px; 
+  width: 180px;         
+  opacity: 0.9;
+}
+
+
+.process-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #8b6f5a;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5%;
+}
+
+.floral {
+  position: absolute;
+  top: 120px;
+  width: 320px;
+  opacity: 0.25;       
+  z-index: 1;           
+  pointer-events: none;
+}
+
+.floral-left {
+  left: -60px;
+}
+
+.floral-right {
+  right: -60px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 60px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;       
+}
+
+.process-card {
+  max-width: 320px;
+  margin: auto;
+}
+
+.process-step {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #9b7b64;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.process-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #c2185b;
+  margin-bottom: 14px;
+}
+
+.process-card p {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #6f6f6f;
+}
+
+@media (max-width: 1024px) {
+  .process-section {
+    padding: 100px 40px;
+  }
+
+  .process-title {
+    font-size: 30px;
+  }
+
+  .process-divider {
+    width: 150px;
+    margin: 10px auto 50px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 40px;
+  }
+
+  .floral {
+    width: 240px;
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-section {
+    padding: 80px 20px;
+  }
+
+  .process-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .process-divider {
+    width: 140px;
+    margin: -25px auto 40px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .process-card {
+    max-width: 100%;
+  }
+
+  .process-step {
+    font-size: 16px;
+  }
+
+  .process-card h3 {
+    font-size: 17px;
+  }
+
+  .process-card p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .floral {
+    width: 180px;
+    top: 40px;
+    opacity: 0.15;
+  }
+
+  .floral-left {
+    left: -80px;
+  }
+
+  .floral-right {
+    right: -80px;
+  }
+}

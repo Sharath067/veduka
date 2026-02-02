@@ -12,6 +12,11 @@ import ElegantSection from "./pages/aboutus/ElegantSection";
 import Footer from "./components/footer/Footer";
 import WorkCarousel from "./components/main/WorkCarousel";
 import WeddingStories from "./components/main/WeddingStories";
+import ProcessBanner from "./components/ourProcess/ProcessBanner";
+import OurProcess from "./components/ourProcess/OurProcess";
+import OurServiceBanner from "./components/our-service/OurServiceBanner";
+import TellYourStory from "./components/our-service/TellYourStory";
+import WhatWeDo from "./components/our-service/WhatWeDo";
 
 function App() {
   return (
@@ -41,6 +46,27 @@ function App() {
               <HeartfeltWeddings />
               <StorySlices />
               <ElegantSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/our-process"
+          element={
+            <>
+              <ProcessBanner />
+              <OurProcess />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/our-service"
+          element={
+            <>
+              <OurServiceBanner />
+              <WhatWeDo />
+              <TellYourStory />
               <Footer />
             </>
           }

@@ -1,0 +1,80 @@
+.what-we-do {
+  width: 100%;
+  padding: 60px 80px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.what-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.what-divider {
+  font-size: 16px;
+  color: #b85c5c;
+  margin-bottom: 40px;
+}
+
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+}
+
+.what-card {
+  text-align: center;
+}
+
+.what-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  border-radius: 50px;
+}
+
+.what-card img:hover {
+  transform: scale(1.03);
+}
+
+.what-card p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.what-decorative{
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+
+@media (max-width: 1024px) {
+  .what-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    padding: 40px 20px;
+  }
+
+  .what-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-grid {
+    grid-template-columns: 1fr;
+  }
+}

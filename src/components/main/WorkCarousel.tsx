@@ -61,7 +61,6 @@ const data = [
 
 export default function WorkCarousel() {
   const [index, setIndex] = useState<number>(() => {
-    // Try to restore previous index from localStorage
     const saved = localStorage.getItem("carouselIndex");
     return saved ? Number(saved) : 0;
   });
@@ -71,7 +70,6 @@ export default function WorkCarousel() {
   const prev = () => setIndex((prev) => (prev - 1 + data.length) % data.length);
   const next = () => setIndex((prev) => (prev + 1) % data.length);
 
-  // Auto-scroll
   useEffect(() => {
     intervalRef.current = window.setInterval(() => {
       next();
@@ -82,7 +80,6 @@ export default function WorkCarousel() {
     };
   }, []);
 
-  // Save index on change so it persists
   useEffect(() => {
     localStorage.setItem("carouselIndex", index.toString());
   }, [index]);
