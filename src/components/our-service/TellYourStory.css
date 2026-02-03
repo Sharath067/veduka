@@ -112,7 +112,7 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
+.submit-button:hover {
   background: #9e4a4a;
 }
 

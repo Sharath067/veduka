@@ -76,7 +76,7 @@ export default function TellYourStory() {
           </div>
         </div>
 
-        <button type="submit">SUBMIT NOW</button>
+        <button className="submit-button" type="submit">SUBMIT NOW</button>
       </form>
     </section>
   );
